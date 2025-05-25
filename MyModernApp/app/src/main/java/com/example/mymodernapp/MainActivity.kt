@@ -245,7 +245,7 @@ fun SmsForwarderScreen(
         Spacer(modifier = Modifier.height(8.dp))
         Button(
             onClick = {
-                if (targetPhoneNumberInput.isNotBlank() && targetPhoneNumberInput.matches(Regex("^\+?[0-9]{10,13}\$"))) {
+                if (targetPhoneNumberInput.isNotBlank() && targetPhoneNumberInput.matches(Regex("^\\+?[0-9]{10,13}\$"))) {
                     onSavePhoneNumber(targetPhoneNumberInput)
                     targetPhoneNumberInput = "" // Clear input field after save
                 } else {
