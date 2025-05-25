@@ -8,6 +8,8 @@ composeBom = "2023.08.00" # Check for latest stable BOM
 junit = "4.13.2"
 androidxTestExtJunit = "1.1.5"
 espressoCore = "3.5.1"
+firebaseBom = "32.7.4" # Check for latest stable BOM
+googleServicesPlugin = "4.4.1" # Check for latest stable
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -24,7 +26,11 @@ espresso-core = { group = "androidx.test.espresso", name = "espresso-core", vers
 ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" } # -ktx for Kotlin extensions
+firebase-remote-config = { group = "com.google.firebase", name = "firebase-config-ktx" } # -ktx for Kotlin extensions
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidApplication" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinAndroid" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServicesPlugin" }
