@@ -1,0 +1,29 @@
+# Android Studio
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.cxx
+local.properties
+
+# Android build outputs
+/build
+app/build
+
+# Kotlin
+!**/src/main/kotlin/
+!**/src/test/kotlin/
+!**/src/androidTest/kotlin/
+
+# Java
+!**/src/main/java/
+!**/src/test/java/
+!**/src/androidTest/java/
